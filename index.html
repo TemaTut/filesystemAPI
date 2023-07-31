@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="dist/reset.css" />
+        <link rel="stylesheet" href="dist/reveal.css" />
+        <link rel="stylesheet" href="dist/theme/black.css" />
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>FileSystem API</section>
+                <section>
+                    <ul>
+                        <li>What is API in general?</li>
+                        <li>What is Filesystem API?</li>
+                        <li>The main functions of the Filesystem API</li>
+                        <li>Examples of using Filesystem API</li>
+                        <li>Supported programming languages</li>
+                        <li>Features and potential issues</li>
+                        <li>Conclusion</li>
+                    </ul>
+                </section>
+
+                <section>
+                    What is API in general?
+                    <img src="./examples/assets/slide3.png" alt="" />
+                </section>
+                <section>
+                    What is Filesystem API?
+                    <img src="./examples/assets/slide4.png" alt="" />
+                </section>
+                <section>
+                    The main functions of the Filesystem API
+                    <ul>
+                        <li>Creating and deleting files and directories</li>
+                        <li>Reading and writing data to files</li>
+                        <li>Moving and renaming files and directories</li>
+                        <li>
+                            Getting information about files and directories, such as size, creation date, permissions,
+                            etc
+                        </li>
+                        <li>Checking the existence of files and directories</li>
+                    </ul>
+                </section>
+                <section>
+                    Examples of using Filesystem API
+                    <img src="./examples/assets/slide6.jpg" alt="" />
+                </section>
+                <section>
+                    Supported programming languages
+                    <p>The Filesystem API is available in various programming languages. Here are a few examples:</p>
+                    <ul>
+                        <li>In Python, we can use the modules "os" and "shutil."</li>
+                        <li>In JavaScript, the "fs" module is available.</li>
+                        <li>In Java, we can utilize the "java.io.File" class.</li>
+                    </ul>
+                </section>
+                <section>
+                    <img src="./examples/assets/slide8.jpg" alt="" />
+                </section>
+
+                <section>
+                    <ul>
+                        <li>
+                            Error Handling: It is necessary to handle potential errors, such as lack of access rights or
+                            open files
+                        </li>
+                        <li>Text File Encodings: Consider encodings when reading and writing textual data</li>
+                        <li>
+                            Path Management: Be attentive to managing file and directory paths, especially when working
+                            across different operating systems
+                        </li>
+                        <li>
+                            Security: Always validate user input to avoid vulnerabilities associated with file
+                            operations
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <img src="./examples/assets/result.jpg" alt="" />
+                </section>
+                <section>Thank you for your attention!</section>
+            </div>
+        </div>
+
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+            });
+        </script>
+    </body>
+</html>
